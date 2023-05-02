@@ -1,0 +1,132 @@
+/*type=colour, type=number*/
+
+* {
+    padding: 0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: azure;
+}
+
+p {
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#addElement {
+    display: inline-block;
+    float: left;
+    margin-right: 10rem;
+}
+
+form {
+    margin: 1rem;
+}
+
+input {
+    border-style: solid;
+}
+
+/*Top right bottom and left.*/
+input[type=button] {
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+input[type=button]:hover {
+    background-color: lightblue;
+}
+
+input[type=file] {
+    border-style: none;
+}
+
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+input[type='Number']:read-only {
+    background-color: lightgrey;
+}
+  
+input[type='radio']:checked {
+background: darkcyan;
+}
+
+/*Table styling*/
+th, td {
+    border: 1px solid darkcyan;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+td, th {
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+#elementsTableDIV {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+/*These styles were used to set-up the header of the page, and include a dropdown menu.*/
+header {
+    width: 100%;
+    background-color: darkcyan;
+    margin: 1rem;
+}
+
+a {
+    background-color: darkcyan;
+}
+
+nav li {
+    background-color: darkcyan;
+}
+
+nav ul {
+    list-style: none;
+}
+
+li {
+    background-color: darkcyan;
+}
+
+ul > li, nav a {
+    display: inline-block;
+    padding:0em 1em;	
+	font-size:1em;
+	line-height: 3em;
+	text-decoration:none;
+    color: whitesmoke;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/*Priortized styles to overwrite and previous styles*/
+input {
+    background-color: whitesmoke;
+}

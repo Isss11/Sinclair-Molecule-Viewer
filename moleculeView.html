@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Viewer - MolViewer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="moleculeViewScripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header> <!--Encompasses entire header to be referred to as one.-->
+      <h1>Elements</h1>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="elements.html">Elements</a></li>
+              <li><a href="fileUpload.html">Molecule Upload</a></li>
+              <li><a href="moleculeView.html">Molecule Viewer</a></li>
+          </ul>
+      </nav>
+  </header>
+    <h2>Select and View an Element</h2>
+    <h2>Uploaded Molecules</h2>
+    <div>
+
+    <div id="viewInputs">
+      <form id="molForm">
+        <input type="button" id="viewButton" value="View Selected Molecule">
+      </form>
+  
+      <p id="dialog">Pick a molecule to view and choose its rotation magnitude/direction.</p>
+
+      <div id="rotationPage">
+        <h2>Rotate Image (enter degrees):</h2>
+        <form id="rotateForm">
+          <label><div class="degLabel">X Degrees</div><input type="number" id="rotateX" name="rotateX" min="0" step="1"></label>
+          <label><div class="degLabel">Y Degrees</div><input type="number" id="rotateY" name="rotateY" min="0" step="1"></label>
+          <label><div class="degLabel">Z Degrees</div><input type="number" id="rotateZ" name="rotateZ" min="0" step="1"></label>
+
+          <label for="x">X</label>
+          <input type="radio" class="degChoice" name="degChoice" id="x" value="x">
+          <label for="y">Y</label>
+          <input type="radio" class="degChoice" name="degChoice" id="y" value="y">
+          <label for="z">Z</label>
+          <input type="radio" class="degChoice" name="degChoice" id="z" value="z">
+        </form>
+      </div>
+    </div>
+
+    <!--Will use JS to put molecule within this div-->
+    <div id="moleculeImage"></div>
+  </body>
+</html>

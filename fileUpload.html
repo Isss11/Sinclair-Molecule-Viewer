@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Molecule Upload - MolViewer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="fileUploadScripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <header> <!--Encompasses entire header to be referred to as one.-->
+            <h1>Elements</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="fileUpload.html">Molecule Upload</a></li>
+                    <li><a href="moleculeView.html">Molecule Viewer</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2><em>Upload an SDF File Below</em></h2>
+        <form id="fileForm" enctype="multipart/form-data"> <!--Note the request for the molecule action here-->
+            <p>
+                <label>Name of Molecule</label>
+                <input type="text" id="moleculeNameInput" name="moleculeNameInput">
+                <input type="file" id="sdf_file" name="filename"/>
+            </p>
+            <p>
+                <input type="button" id="fileSubmitButton" value="Upload"/> 
+            </p>
+        </form>
+        <p id="dialog">Ready for upload. Please enter an .sdf file.</p>
+    </body>
+</html>

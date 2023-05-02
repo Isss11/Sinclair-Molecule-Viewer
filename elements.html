@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elements - MolViewer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="elementsScripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header> <!--Encompasses entire header to be referred to as one.-->
+      <h1>Elements</h1>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="elements.html">Elements</a></li>
+              <li><a href="fileUpload.html">Molecule Upload</a></li>
+              <li><a href="moleculeView.html">Molecule Viewer</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div id="addElement">
+    <h2>Add an Element</h2>
+    <form>
+        <label>Element Number</label>
+        <br>
+        <input type="number" id = "elementNumberInput" name="elementNumberInput" min="1" step="1">
+        <br>
+        <label>Element Code</label>
+        <br>
+        <input type="text" id = "elementCodeInput" name= "elementCodeInput">
+        <br>
+        <label>Element Name</label>
+        <br>
+        <input type="text" id = "elementName" name = "elementName">
+        <br>
+        <label>Colour #1</label>
+        <br>
+        <input type="color" id = "colour1In" name="colour1In" value="#1EB53A">
+        <br>
+        <label>Colour #2</label>
+        <br>
+        <input type="color" id = "colour2In" name="colour2In" value="#000000">
+        <br>
+        <label>Colour #3</label>
+        <br>
+        <input type="color" id = "colour3In" name="colour3In" value="#00A3DD">
+        <br>
+        <label>Radius</label>
+        <br>
+        <input type="number" step="any" id = "radiusInput" name="radiusInput" min="0">
+        <br>
+        <input type="button" id="addButton" value="Add">
+        <br>
+    </form>
+
+    <p id="dialog">Ready to add an element.</p>
+  </div>
+
+    <!--Used to show existing elements, so that they can also be removed upon request.-->
+    <div id="elementsTableDIV">
+      <table id="elementsTable" class="container">
+        <tr>
+          <th>Number</th>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Colour #1</th>
+          <th>Colour #2</th>
+          <th>Colour #3</th>
+          <th>Radius</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
